@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <div>123465</div>
     <div>hello world</div>
     <div v-for="item in list" :key="item.id" @click="test(item)">
       {{item.username}}: {{item.openid}}
@@ -44,7 +43,7 @@ export default {
       wx.request({
         url: "http://127.0.0.1:3000/api/getAll",
         success: res => {
-          console.log(res)
+          console.log(res);
           this.list = res.data.data;
         },
         fail: () => {},
@@ -71,11 +70,10 @@ export default {
       wx.switchTab({ url: "/pages/my/main" });
     }
   },
-  onPullDownRefresh() {
-  },
+  onPullDownRefresh() {},
 
   onReachBottom() {
-    console.log("触底了");
+    console.log("触底了, 触发触底事件, ajax咯");
   },
 
   created() {

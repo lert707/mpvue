@@ -13,29 +13,27 @@ export default {
   data() {
     return {
       num: 0
-    }
+    };
   },
   computed: {
     price() {
-      return this.num * 300
+      return this.num * 300;
     }
   },
   methods: {
     add() {
-      this.num++
+      this.num++;
     },
     sub() {
-      this.num--
+      this.num--;
     }
   },
-  created() {
-  },
+  created() {},
   mounted() {
-    console.log(this.$root.$mp.query)
+    console.log(this.$root.$mp.query);
   }
-}
+};
 </script>
 
 <style scoped>
-
 </style>

@@ -1,6 +1,6 @@
 # my-project
 
-> A Mpvue project
+> A Mpvue project, 微信小程序
 
 ## Build Setup
 
@@ -9,13 +9,15 @@
 npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run dev 
 
 # build for production with minification
 npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
-```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# npm 后没反应, 等等就好了, 大概一两分钟就会看到dist目录生成
+
+```
+## 本demo使用了less

@@ -1,7 +1,6 @@
 <template>
   <div>
     <p class="card">
-      456
       {{text}}
     </p>
     <input class="input" v-model="inputValue" type="text" @input="test">
@@ -18,22 +17,22 @@ export default {
   data() {
     return {
       inputValue: ""
-    }
+    };
   },
   watch: {
     inputValue(newValue, oldValue) {
-      console.log(newValue, 333)
-    },
+      console.log(newValue, 333);
+    }
   },
   methods: {
     test() {
-      this.$emit("getMsg", this.inputValue)
+      this.$emit("getMsg", this.inputValue);
     }
   },
   onShow() {
-    console.log(this.text, "组件")
+    console.log(this.text, "组件");
   }
-}
+};
 </script>
 
 <style>

@@ -10,26 +10,24 @@
 </template>
 
 <script>
-import card from '@/components/card'
+import card from "@/components/card";
 
 export default {
   data() {
     return {
       desc: "this is my"
-    }
+    };
   },
   components: {
-    card,
+    card
   },
-  computed: {
-    
-  },
+  computed: {},
   methods: {
     getinfo() {
       wx.getUserInfo({
         withCredentials: false,
         success: res => {
-          console.log(res)
+          console.log(res);
         },
         fail: () => {},
         complete: () => {}
@@ -39,13 +37,13 @@ export default {
   mounted() {
     // this.getinfo()
   },
-  onShow () {
-    this.getinfo()
+  onShow() {
+    this.getinfo();
   },
-  onLoad () {
-    console.log("load")
+  onLoad() {
+    console.log("load");
   }
-}
+};
 </script>
 
 <style scoped lang="less">
@@ -57,12 +55,12 @@ export default {
   align-items: center;
 
   .usericon {
-      width: 220rpx;
-      height: 220rpx;
-      display: flex;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 20rpx;
+    width: 220rpx;
+    height: 220rpx;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20rpx;
   }
 }
 </style>
