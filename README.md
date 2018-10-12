@@ -20,4 +20,4 @@ npm run build --report
 # npm 后没反应, 等等就好了, 大概一两分钟就会看到dist目录生成
 
 ```
-## 本demo使用了less
+## 本demo结合了echarts图表组件
